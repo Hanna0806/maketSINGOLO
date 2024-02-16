@@ -2,6 +2,7 @@
 
 
 $font: 'Lato', Arial, sans-serif;
+
 html {
     font-family: $font;
 }
@@ -12,6 +13,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 20px 77px;
+    gap: 20px;
 
     &__logo {
         font-weight: 700;
@@ -31,7 +33,7 @@ html {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
     }
 
     &__list-item {
@@ -39,7 +41,7 @@ html {
         align-items: center;
 
         &_active {
-            color:#EDFF7E;
+            color: #EDFF7E;
         }
 
         +.header__list-item {
@@ -53,6 +55,22 @@ html {
                 border-radius: 50%;
             }
         }
-        
+
+    }
+}
+
+.home {
+    &__content {
+        background-color: #7067CF;
+        padding: 54px 40px 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        &_arrow-right {
+            transform: rotate(180deg);
+        }
     }
 }
