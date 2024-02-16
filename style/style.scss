@@ -1,0 +1,58 @@
+@import '../assets/fonts/_fonts', '_reset';
+
+
+$font: 'Lato', Arial, sans-serif;
+html {
+    font-family: $font;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 77px;
+
+    &__logo {
+        font-weight: 700;
+
+        span {
+            position: relative;
+            bottom: 4px;
+            color: #EDFF7E;
+        }
+    }
+
+    &__navigation {
+        font-size: 12px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+
+        &_active {
+            color:#EDFF7E;
+        }
+
+        +.header__list-item {
+            &::before {
+                content: '';
+                display: block;
+                width: 3px;
+                height: 3px;
+                margin: 0 40px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+}
