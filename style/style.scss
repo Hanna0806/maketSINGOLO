@@ -90,9 +90,11 @@ html {
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        color: #5A5A7F;
+        margin-top: 40px;
 
         h3 {
-           margin-bottom: 12px; 
+            margin-bottom: 12px;
         }
     }
 }
@@ -103,7 +105,40 @@ html {
 }
 
 .description {
-    margin-bottom: 40px;
     font-size: 16px;
     line-height: 30px;
+    color: #5A5A7F;
+}
+
+.btn {
+    border: 1px solid #7067CF;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    margin-bottom: 40px;
+    margin: 20px 16px 40px 0px;
+    background-color: transparent;
+    color: #5A5A7F;
+
+    &_active {
+        background-color: #7067CF;
+        color: white;
+    }
+}
+
+.portfolio {
+    background-color: #EDFF7E;
+    padding: 40px 40px 60px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
