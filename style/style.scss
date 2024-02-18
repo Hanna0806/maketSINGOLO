@@ -157,3 +157,49 @@ html {
         font-size: 13px;
     }
 }
+
+
+@media screen and (max-width: 1020px) {
+    .header {
+        padding: 20px 40px;
+
+        &__list-item {
+            +.header__list-item {
+                &::before {
+                    content: '';
+                    margin: 0 16px;
+                }
+            }
+    
+        }
+    }
+
+    .home {
+        &__content {
+            padding: 40px 40px 45px;
+        }
+
+        &__img {
+            &_picture1 {
+                height: 365px;
+            }
+
+            &_picture2 {
+                height: 182px;
+            }
+        }
+    }
+
+    .services {
+        &__item {
+            flex-basis: 48%;
+        }
+    }
+
+    .portfolio {
+        &__list {  
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
