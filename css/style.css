@@ -152,3 +152,17 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.footer {
+  background-color: #EDFF7E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 40px;
+  border-top: 1px solid #D4CBFF;
+}
+.footer p {
+  color: #5A5A7F;
+  width: 900;
+  font-size: 13px;
+}
